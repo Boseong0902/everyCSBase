@@ -1,0 +1,104 @@
+# interface
+
+인터페이스는 객체가 외부에 제공해야 하는 기능의 계약을 정의한다. 구현 클래스는 이 계약을 충족해야 하며, 각 기능의 구체적인 구현 방식은 클래스마다 달라질 수 있다.
+
+이를 통해 추상화, 다형성, 느슨한 결합과 유지보수성을 보장할 수 있다.
+
+```java
+public interface Car {
+    void accelerate();
+    void slowDown();
+    void turnRight();
+    void turnLeft();
+    void goToBack();
+    void getRemainEnergy();
+    void recharge();
+}
+
+public class GasolineCar implements Car {
+    @Override
+    public void accelerate() {}
+
+    @Override
+    public void slowDown() {}
+
+    @Override
+    public void turnRight() {}
+
+    @Override
+    public void turnLeft() {}
+
+    @Override
+    public void goToBack() {}
+
+    @Override
+    public void getRemainEnergy() {}
+
+    @Override
+    public void recharge() {}
+}
+
+public class ElectricCar implements Car {
+    @Override
+    public void accelerate() {}
+
+    @Override
+    public void slowDown() {}
+
+    @Override
+    public void turnRight() {}
+
+    @Override
+    public void turnLeft() {}
+
+    @Override
+    public void goToBack() {}
+
+    @Override
+    public void getRemainEnergy() {}
+
+    @Override
+    public void recharge() {}
+}
+```
+
+## 추상화
+
+전기차든 내연차든 호출해야 하는 상황이라고 해보자. 만약 인터페이스로 메서드를 묶지 않았다면 각각의 메서드 이름을 확인해야 한다. 인터페이스로 묶음으로써 내부를 확인하지 않아도 해당 기능이 `ElectricCar`, `GasolineCar` 모두에 구현되어 있음을 알고 호출부에서 편리하게 사용할 수 있다.
+
+## 다형성
+
+인터페이스는 런타임 다형성의 기준 타입으로 사용할 수 있다.
+
+```java
+public static void main(String[] args) {
+    Car car = new ElectricCar();
+    car.accelerate();
+}
+```
+
+위 코드에서 `car` 참조가 실제로 `GasolineCar`일지 `ElectricCar`일지는 런타임의 실제 객체에 따라 정해진다.
+
+## 느슨한 결합과 유지보수성
+
+구체 클래스를 직접 선언하면 결합도가 높아진다.
+
+```java
+public class Driver {
+    private final ElectricCar car = new ElectricCar();
+}
+```
+
+이러면 `Driver`가 `ElectricCar`에 고정되기 때문에 `GasolineCar`로 교체하려면 코드를 바꾸어야 한다.
+
+```java
+public class Driver {
+    private final Car car;
+
+    public Driver(Car car) {
+        this.car = car;
+    }
+}
+```
+
+이렇게 구체 클래스 대신 인터페이스에 의존하면 `Driver`는 실제 자동차 구현을 알 필요가 없으므로 결합도가 낮아진다.
