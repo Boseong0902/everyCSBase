@@ -1,4 +1,4 @@
-# I - 인터페이스 분리
+# ISP - 인터페이스 분리
 
 불필요한 메서드를 강제로 구현하는 일이 없게 하기 위해서 하나의 인터페이스를 여러 인터페이스로 분리한다
 
@@ -26,8 +26,7 @@ public class wwwPingConnection implements Connection {
     }
 
     @Override
-    public void socket() {
-    }
+    public void socket() {}
 
     @Override
     public void connect() {
@@ -36,7 +35,7 @@ public class wwwPingConnection implements Connection {
 }
 ```
 
-위 코드는 `socket` 메서드는 필요 없지만, 그렇다고 `socketConnection`의 새 클래스를 정의하기엔, `connect()` 메서드는 두 인터페이스 모두 다 필요하기에 분리하기 애매하다
+위 코드는 socekt 메서드는 필요 없지만, 그렇다고 socketConnection 의 새 클래스를 정의하기엔, connect() 메서드는 두 인터페이스 모두 다 필요하기에 분리하기 애매하다
 
 이런 경우엔 인터페이스 상속을 사용
 
@@ -66,8 +65,18 @@ public class wwwPingConnection implements HttpConnection {
     }
 
     @Override
+    public void socket() {}
+
+    @Override
     public void connect() {
         System.out.println("Connect to " + www);
     }
 }
 ```
+
+## 관련 개념
+
+- [[SOLID]]
+- [[interface]]
+- [[DIP - 의존 관계 역전]]
+
