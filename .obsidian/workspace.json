@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architecture/개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일.md",
+                "file": "java/Java 문법/static, final 키워드.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일"
+              "title": "static, final 키워드"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architecture/개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일.md",
+                "file": "java/Java 문법/static, final 키워드.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일 의 백링크"
+              "title": "static, final 키워드 의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architecture/개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일.md",
+                "file": "java/Java 문법/static, final 키워드.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일 의 나가는 링크"
+              "title": "static, final 키워드 의 나가는 링크"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architecture/개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일.md",
+                "file": "java/Java 문법/static, final 키워드.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일 의 개요"
+              "title": "static, final 키워드 의 개요"
             }
           }
         ]
@@ -185,33 +185,37 @@
   },
   "active": "a9f6713f595d2db0",
   "lastOpenFiles": [
-    "architecture/모놀리식 vs MSA.md",
+    "면접 대비/서비스 아키텍처 면접 질문.md",
+    "면접 대비/SOLID와 디자인 패턴 면접 질문.md",
+    "면접 대비/Java 문법과 JVM 면접 질문.md",
+    "면접 대비/Java 객체지향 면접 질문.md",
+    "면접 대비/면접 대비.md",
+    "면접 대비",
+    "java/객체지향 프로그래밍/오버라이딩 vs 오버로딩.md",
+    "java/객체지향 프로그래밍/인터페이스와 추상 클래스.md",
+    "java/Java 문법/transient 키워드.md",
+    "java/Java 문법/synchronized, volatile 키워드.md",
+    "java/Java 문법/static, final 키워드.md",
+    "java/Java 문법/Java 문법.md",
+    "java/객체지향 프로그래밍/interface.md",
+    "java/객체지향 프로그래밍/정적 다형성과 런타임 다형성.md",
+    "java/JVM/자바의 데이터 저장소 - 메서드 영역, 스택 영역, 힙 영역.md",
+    "java/Java 문법/접근 제어자.md",
+    "java/Java 문법/abstract와 interface.md",
+    "java/Java 문법/instanceof.md",
+    "java/Java 문법/try-catch-finally.md",
+    "java/Java 문법/this와 super.md",
+    "java/객체지향 프로그래밍/객체지향 프로그래밍의 개념 이해.md",
+    "java/JVM/static, final 키워드.md",
+    "java/Java 문법",
+    "java/JVM",
+    "java/디자인 패턴/디자인 패턴.md",
     "architecture/개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일.md",
+    "architecture/모놀리식 vs MSA.md",
     "architecture/PostgreSQL 페일오버 설계 방식.md",
     "java/Java.md",
-    "architecture/페일오버.md",
-    "architecture/MySQL 페일오버 설계 방식.md",
-    "java/디자인 패턴/SOLID/DIP - 의존 관계 역전.md",
-    "java/디자인 패턴/SOLID/ISP - 인터페이스 분리.md",
-    "java/디자인 패턴/SOLID/LSP - 리스코프 치환.md",
-    "java/디자인 패턴/SOLID/OCP - 개방-폐쇄.md",
-    "java/디자인 패턴/SOLID/SRP - 단일 책임.md",
-    "java/디자인 패턴/SOLID/SOLID.md",
     "java/디자인 패턴/SOLID",
-    "java/디자인 패턴/디자인 패턴.md",
     "java/디자인 패턴",
-    "java/객체지향 프로그래밍/interface.md",
-    "java/객체지향 프로그래밍/객체지향 프로그래밍의 개념 이해.md",
-    "java/객체지향 프로그래밍",
-    "java/6.1 객체지향 프로그래밍/6.1 b - 추상 클래스 vs 인터페이스.md",
-    "java/6.1 객체지향 프로그래밍/6.1 객체지향 프로그래밍의 개념 이해.md",
-    "java/6.2 SOLID와 디자인 패턴/6.2 a5 - DIP 의존 관계 역전 원칙.md",
-    "java/6.2 SOLID와 디자인 패턴/6.2 a4 - ISP 인터페이스 분리 원칙.md",
-    "java/6.2 SOLID와 디자인 패턴/6.2 a3 - LSP 리스코프 치환 원칙.md",
-    "java/6.2 SOLID와 디자인 패턴/6.2 a2 - OCP 개방-폐쇄 원칙.md",
-    "java/6.2 SOLID와 디자인 패턴/6.2 a1 - SRP 단일 책임 원칙.md",
-    "java/6.2 SOLID와 디자인 패턴/6.2 a - SOLID.md",
-    "java/6.2 SOLID와 디자인 패턴/6.2 디자인 패턴과 SOLID.md",
-    "architecture/서비스 아키텍처.md"
+    "java/객체지향 프로그래밍"
   ]
 }

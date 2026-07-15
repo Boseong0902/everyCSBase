@@ -158,4 +158,4 @@ public class AreaConvertor {
 - [[SRP - 단일 책임]]
 - [[LSP - 리스코프 치환]]
 - [[interface]]
-
+- [[정적 다형성과 런타임 다형성]]
