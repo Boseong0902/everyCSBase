@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "12be418ff275b045",
@@ -185,6 +186,12 @@
   },
   "active": "a9f6713f595d2db0",
   "lastOpenFiles": [
+    "java/디자인 패턴/GoF/정적 팩토리 메서드와 팩토리 메서드.md",
+    "java/디자인 패턴/GoF/빌더.md",
+    "java/디자인 패턴/GoF/싱글톤.md",
+    "java/디자인 패턴/GoF/GoF.md",
+    "java/디자인 패턴/GoF",
+    "java/객체지향 프로그래밍/OOP 4대 원칙.md",
     "면접 대비/서비스 아키텍처 면접 질문.md",
     "면접 대비/SOLID와 디자인 패턴 면접 질문.md",
     "면접 대비/Java 문법과 JVM 면접 질문.md",
@@ -209,11 +216,6 @@
     "java/JVM/static, final 키워드.md",
     "java/Java 문법",
     "java/JVM",
-    "java/디자인 패턴/디자인 패턴.md",
-    "architecture/개발 환경과 운영 환경 분리하는 방법 - 스프링 프로파일.md",
-    "architecture/모놀리식 vs MSA.md",
-    "architecture/PostgreSQL 페일오버 설계 방식.md",
-    "java/Java.md",
     "java/디자인 패턴/SOLID",
     "java/디자인 패턴",
     "java/객체지향 프로그래밍"
