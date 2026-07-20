@@ -8,6 +8,22 @@ Java 문법 문서는 키워드 중에서도 JVM의 메모리 배치, 실행 흐
 - [[synchronized, volatile 키워드]]
 - [[transient 키워드]]
 
+## 값과 타입
+
+- [[Call by Value]]
+- [[캐스팅]]
+- [[String, StringBuffer, StringBuilder]]
+- [[Interned String]]
+- [[불변 객체]]
+
+## 실행과 데이터 처리
+
+- [[직렬화]]
+- [[Error와 Exception]]
+- [[Java Stream]]
+- [[Record]]
+- [[컬렉션 프레임워크]]
+
 ## 관련 개념
 
 - [[Java]]
