@@ -65,14 +65,15 @@ public class wwwPingConnection implements HttpConnection {
     }
 
     @Override
-    public void socket() {}
-
-    @Override
     public void connect() {
         System.out.println("Connect to " + www);
     }
 }
 ```
+
+분리 전에는 필요도 없는 `socket()`을 빈 메서드로 구현해야 했지만, `HttpConnection`만 구현하면서 그 강제 구현이 사라졌다.
+
+공통으로 필요한 `connect()`는 상위 인터페이스인 `Connection`에 남겨두었기 때문에 두 계열 모두에서 그대로 쓸 수 있다.
 
 ## 관련 개념
 
