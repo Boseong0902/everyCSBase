@@ -73,7 +73,7 @@
 
 ## synchronized와 volatile
 
-관련 개념: [[synchronized, volatile 키워드]]
+관련 개념: [[Java 동시성]], [[동시성 문제 - 원자성, 가시성, Race Condition]], [[synchronized, volatile 키워드]]
 
 - synchronized는 무엇을 보장하는가?
 - synchronized는 JVM에서 어떤 락을 사용하는가?
@@ -174,7 +174,7 @@
 
 ## 스레드와 락
 
-관련 개념: [[스레드 활용 - 멀티 스레딩]], [[고유락]], [[synchronized, volatile 키워드]]
+관련 개념: [[Java 동시성]], [[스레드 활용 - 멀티 스레딩]], [[고유락]], [[synchronized, volatile 키워드]]
 
 - `Runnable` 구현과 `Thread` 상속 중 어떤 방식을 선호하는가?
 - `run()`과 `start()`의 차이는 무엇인가?
