@@ -76,6 +76,35 @@ public class User {
 }
 ```
 
+## static 메서드와 오버라이딩
+
+`static` 메서드는 오버라이딩되지 않는다.
+
+오버라이딩은 런타임에 실제 객체 타입을 기준으로 호출 메서드가 결정되는 구조인데, `static` 메서드는 객체가 아니라 클래스에 속한다. 그래서 호출 대상도 런타임 객체 타입이 아니라 참조 타입 또는 클래스명을 기준으로 결정된다.
+
+```java
+class Parent {
+    static void print() {
+        System.out.println("Parent");
+    }
+}
+
+class Child extends Parent {
+    static void print() {
+        System.out.println("Child");
+    }
+}
+
+Parent p = new Child();
+p.print(); // Parent
+```
+
+위 코드는 오버라이딩이 아니라 메서드 하이딩이다.
+
+따라서 인스턴스 메서드를 `static` 메서드로 오버라이딩하거나, 반대로 `static` 메서드를 인스턴스 메서드로 오버라이딩할 수 없다.
+
+자세한 비교는 [[오버라이딩 vs 오버로딩]]의 `static 메서드와 오버라이딩`, `메서드 하이딩` 부분에 정리되어 있다.
+
 ## final
 
 `final`은 더 이상 바꿀 수 없게 만든다는 의미이다.
@@ -151,6 +180,8 @@ public class Parent {
 
 부모 클래스에서 정한 메서드의 동작을 자식 클래스가 바꾸지 못하게 하고 싶을 때 사용한다.
 
+오버라이딩 관점에서 보면 `final` 메서드는 런타임 다형성의 확장 지점을 의도적으로 닫는 키워드다. 즉, 부모 타입 참조 변수에 자식 객체가 들어오더라도 해당 메서드만큼은 자식 클래스가 다른 동작으로 바꿀 수 없다.
+
 ## final 클래스
 
 `final` 클래스는 상속할 수 없다.
@@ -176,5 +207,7 @@ public final class StringUtil {
 - [[Java 문법]]
 - [[자바의 데이터 저장소 - 메서드 영역, 스택 영역, 힙 영역]]
 - [[객체지향 프로그래밍의 개념 이해]]
+- [[오버라이딩 vs 오버로딩]]
+- [[정적 다형성과 런타임 다형성]]
 - [[LSP - 리스코프 치환]]
 - [[synchronized, volatile 키워드]]
