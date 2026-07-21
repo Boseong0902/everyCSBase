@@ -14,6 +14,7 @@ Java 문법 문서는 키워드 중에서도 JVM의 메모리 배치, 실행 흐
 - [[캐스팅]]
 - [[String, StringBuffer, StringBuilder]]
 - [[Interned String]]
+- [[equals와 ==]]
 - [[불변 객체]]
 
 ## 실행과 데이터 처리
