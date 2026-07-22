@@ -98,9 +98,12 @@
 
 - 트랜잭션 격리 수준 네 가지는 각각 무엇을 허용하고 무엇을 막는가?
 - Dirty Read, Non-Repeatable Read, Phantom Read는 각각 무엇인가?
+- Non-Repeatable Read와 Phantom Read는 어떤 점이 다른가?
 - MySQL과 PostgreSQL의 기본 격리 수준은 각각 무엇인가?
 - 읽기 연산이 MVCC 스냅샷을 사용하면 공유락이 왜 필요 없어지는가?
-- 배타락이 격리 수준의 영향을 받지 않는 이유는 무엇인가?
+- MVCC 환경에서 배타락이 걸린 행도 일반 SELECT로 읽을 수 있는 이유는 무엇인가?
+- MySQL InnoDB의 Repeatable Read와 PostgreSQL의 Repeatable Read는 Phantom Read 관점에서 어떻게 다른가?
+- PostgreSQL에서 Read Uncommitted를 지정하면 실제로 어떤 격리 수준처럼 동작하는가?
 - 격리 수준을 높이면 어떤 비용을 지불하게 되는가?
 
 ## MySQL과 PostgreSQL
